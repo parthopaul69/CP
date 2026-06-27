@@ -1,0 +1,78 @@
+# A. Sasha and the Beautiful Array
+ 
+| Field | Value |
+|---|---|
+| **Contest** | [1929](https://codeforces.com/contest/1929) |
+| **Problem** | [1929A — Sasha and the Beautiful Array](https://codeforces.com/contest/1929/problem/A) |
+| **Rating** | 800 |
+| **Tags** | constructive algorithms, greedy, math, sortings |
+| **Verdict** | ✅ Accepted |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Runtime** | 46 ms |
+| **Memory** | 0 KB |
+
+---
+
+| ⏱ Time Limit | 💾 Memory Limit |
+|---|---|
+| 1 second | 256 megabytes |
+
+---
+
+Sasha decided to give his girlfriend an array a_1, a_2, …, a_n. He found out that his girlfriend evaluates the *beauty* of the array as the sum of the values (a_i - a_i - 1) for all integers i from 2 to n.
+
+Help Sasha and tell him the maximum beauty of the array a that he can obtain, if he can rearrange its elements in any way.
+
+## Input
+
+Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.
+
+The first line of each test case contains a single integer n (2 ≤ n ≤ 100) — the length of the array a.
+
+The second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.
+
+## Output
+
+For each test case, output a single integer — the maximum beauty of the array a that can be obtained.
+
+## Examples
+
+**Example:**
+
+```
+5
+3
+2 1 3
+3
+69 69 69
+5
+100 54 80 43 90
+4
+3 4 3 3
+2
+2 1
+```
+
+**Output:**
+
+```
+2
+0
+57
+1
+1
+
+```
+
+## Note
+
+In the first test case, the elements of the array a can be rearranged to make a = [1, 2, 3]. Then its beauty will be equal to (a_2 - a_1) + (a_3 - a_2) = (2 - 1) + (3 - 2) = 2.
+
+In the second test case, there is no need to rearrange the elements of the array a. Then its beauty will be equal to 0.
+
+---
+
+> 🔗 [View on Codeforces](https://codeforces.com/contest/1929/problem/A)
+
+---
+*Synced by [CodeSync Pro](https://github.com/parthopaul69/CodeSync-Pro-Extension)*
