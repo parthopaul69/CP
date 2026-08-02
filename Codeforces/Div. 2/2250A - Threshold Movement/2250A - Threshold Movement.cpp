@@ -37,11 +37,11 @@ typedef vector<vector<int>> vvi;
 #define se      second
 #define sz(x)   (int)(x).size()
 #define nl      '\n'
-#define yes     cout << "YES\n"
-#define no      cout << "NO\n"
+#define Y     cout << "YES\n"
+#define N      cout << "NO\n"
 #define rep(i,a,b)  for(int i=(a); i<(b); i++)
 #define per(i,a,b)  for(int i=(b)-1; i>=(a); i--)
-#define each(x,v)   for(auto& x : v)
+#define each(x,v)   for(auto& x : v)    
 
 ll gcd (ll a, ll b)  { return b ? gcd(b, a%b) : a; }
 ll lcm (ll a, ll b)  { return a / gcd(a, b) * b; }
@@ -79,23 +79,26 @@ template<typename T> bool chmin(T& a, T b) { return a > b ? a = b, 1 : 0; }
 template<typename T> bool chmax(T& a, T b) { return a < b ? a = b, 1 : 0; }
 
 void solve () {
-    ll n, count1 = 0, count2 = 999999999;
-    cin >> n;
-    vll v(n);
+    ll n; cin >> n;
+    vll v1, v2;
     rep (i, 0, n) {
-        cin >> v[i];
+        ll x; cin >> x;
         if ((i + 1) % 2 == 0) {
-            if (v[i] > count1) {
-                count1 = v[i];
-            }
+            v2.pb(x);
         }
         else {
-            if (v[i] < count2) {
-                count2 = v[i];
-            }
+            v1.pb(x);
         }
     }
-    n % 2 == 0 && count1 + 1 < count2 ? cout << "YES" << nl : cout << "NO" << nl;
+    if (n % 2 != 0) {
+        N;
+    }
+    else {
+        sort(all(v1));
+        sort(all(v2));
+        ll mx = v1[0], mn = v2[v2.size() - 1];
+        n % 2 == 0 && mx > mn + 1 ? Y : N;
+    }
 }
 
 int main() {
