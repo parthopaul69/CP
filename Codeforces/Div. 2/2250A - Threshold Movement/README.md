@@ -5,10 +5,10 @@
 | **Contest** | [2250](https://codeforces.com/contest/2250) |
 | **Problem** | [2250A — Threshold Movement](https://codeforces.com/contest/2250/problem/A) |
 | **Rating** | Gym/Unrated |
-| **Tags** | N/A |
+| **Tags** | brute force, implementation, math |
 | **Verdict** | ✅ Accepted |
 | **Language** | C++23 (GCC 14-64, msys2) |
-| **Runtime** | 31 ms |
+| **Runtime** | 15 ms |
 | **Memory** | 0 KB |
 
 ---
