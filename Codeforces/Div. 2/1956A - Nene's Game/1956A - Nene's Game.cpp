@@ -76,5 +76,7 @@ void solve () {
 int main() {
     FASTIO
     int t; cin >> t;
-    while (t--) solve();
+    while (t--) {
+        solve();
+    }
 }
